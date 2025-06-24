@@ -21,9 +21,10 @@ print("===========================================")
 print("ini hasil dari grap tak berarah atau weighted graph")
 
 graph={
-    'a':['b','c'],
+    'A':['b','c'],
     'B':['a'],
-    'C':['a']
+    'C':['a'],
+    'D':['a']
 }
 
 for simpul in graph:
@@ -35,14 +36,14 @@ print("===========================================")
 print("ini hasil graph berbobot ")
 # MENAMPILAKAN HASIL GRAPH berbobot
 graph={
-    'a': {'b':5,"c":2},
-    'b':{'d':4,},
+    'a': {'b':5,"c":4},
+    'b':{'c':6,},
     'c':{'d':7},
-    'd':{'c':7}
+    'd':{'a':11},
 }
 
 for node in graph:
     for neighbor in graph[node]:
-        print(f"{node}->{neighbor} = {graph[node ][neighbor]} km")
+        print(f"{node}->{neighbor} = {graph[node ][neighbor]}")
 
 print("===========================================")
